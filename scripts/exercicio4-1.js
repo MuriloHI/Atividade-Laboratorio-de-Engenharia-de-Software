@@ -1,6 +1,7 @@
 document.getElementById("selecionarProfessor").addEventListener("change", atualizarForms);
 document.getElementById("selecionarAluno").addEventListener("change", atualizarForms);
 
+document.getElementById("btnRedefinir").addEventListener("click", resetarFormulario);
 
 function atualizarForms()
 {
@@ -55,4 +56,16 @@ function atualizarForms()
 
         aluno_curso_Section.appendChild(inputAluno)
     }
+}
+
+function resetarFormulario() {
+    let inputs = document.querySelectorAll("input[type='text'], input[type='email'], input[type='date']");
+    inputs.forEach(input => input.value = "");
+
+    let radios = document.querySelectorAll("input[type='radio']");
+    radios.forEach(radio => radio.checked = false);
+
+    document.getElementById("profAreas").innerHTML = "";
+    document.getElementById("profLattes").innerHTML = "";
+    document.getElementById("aluCurso").innerHTML = "";
 }
