@@ -1,26 +1,28 @@
 document.addEventListener("DOMContentLoaded", function () {
     let section = document.getElementById("contador_principal");
 
-    // Criando a estrutura principal
+    //h2 = total
     let tituloTotal = document.createElement("h2");
     tituloTotal.innerText = "Total";
     section.appendChild(tituloTotal);
 
+    //<p> que vai mudar dinamicamente (ta 0)
     let totalPessoas = document.createElement("p");
     totalPessoas.id = "valorDoTotal";
     totalPessoas.innerText = "0";
     section.appendChild(totalPessoas);
 
+    //botão de redefinir, voltando tudo para zero
     let botaoRedefinir = document.createElement("button");
     botaoRedefinir.id = "resetar";
     botaoRedefinir.innerHTML = "🔄";
     section.appendChild(botaoRedefinir);
 
-    // Criando a div que agrupa homens e mulheres lado a lado
+    //div que fica abaixo dos de cima, é o blocão que pega homem e mulher junto
     let containerPrincipal = document.createElement("div");
     containerPrincipal.classList.add("container-principal");
 
-    // Criando container para Homens
+    //HOMENS
     let containerHomens = document.createElement("div");
     containerHomens.classList.add("container");
 
@@ -38,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
     numeroHomens.innerText = "0";
     containerHomens.appendChild(numeroHomens);
 
-    // Criando div para botões
+    //HOMENS - MAS A DIV DE BOTÕES DELE
     let botoesHomens = document.createElement("div");
     botoesHomens.classList.add("botoes");
 
@@ -55,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
     containerHomens.appendChild(botoesHomens);
     containerPrincipal.appendChild(containerHomens);
 
-    // Criando container para Mulheres
+    //MULHERES
     let containerMulheres = document.createElement("div");
     containerMulheres.classList.add("container");
 
@@ -73,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
     numeroMulheres.innerText = "0";
     containerMulheres.appendChild(numeroMulheres);
 
-    // Criando div para botões
+    //MULHERES - MAS A DIV DE BOTÕES DELA
     let botoesMulheres = document.createElement("div");
     botoesMulheres.classList.add("botoes");
 
