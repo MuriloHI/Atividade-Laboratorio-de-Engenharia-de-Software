@@ -8,17 +8,16 @@
     font-family: Arial, sans-serif;
     margin: auto;
 
-    background-color: blueviolet;
 }
 
-/* Flexbox para alinhar lado a lado */
-.container-principal {
+/* flexbox -> uma "caixa" para homem e outra para a mulher (o flex padão q deixa lado a */
+.section-Homem-Mulher {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 20px;
 
-    background-color: aquamarine;
+
 }
 
 /* container que esta homem e mulher */
@@ -28,21 +27,18 @@
     align-items: center;
     width: 45%;
 
-    background-color: brown;
 }
 
-/* Ajuste das imagens */
+/* icone mulher e homem AMBOS ALTERADOS */
 .icone {
     width: 80px;
     margin-bottom: 5px;
 }
 
-/* Estilização dos botões */
+/* botão + e -  de ambos os lados*/
 .botoes {
     display: flex;
     gap: 10px;
-
-    background-color: cadetblue;
 }
 
 button {
@@ -54,8 +50,8 @@ button {
 }
 
 .adicionar {
-    background-color: #4CAF50;
-    color: white;
+    background-color: green;
+    color: rgb(255, 255, 255);
 }
 
 .remover {
